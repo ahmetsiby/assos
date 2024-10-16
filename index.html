@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Association Contre le Diabète au Sénégal</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Association dédiée à la sensibilisation, la prévention et la lutte contre le diabète au Sénégal."
+    />
+    <meta
+      name="keywords"
+      content="Diabète, Sénégal, Santé, Association, Prévention, Sensibilisation, Bénévolat"
+    />
+
+    <!-- Liens vers les styles CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- En-tête du site -->
+    <div class="body_container">
+      <header data-aos="fade-left" data-aos-duration="3000">
+        <div class="container">
+          <div class="logo">
+            <a href="#accueil"
+              ><img
+                src="logo.png"
+                alt="Logo de l'Association Contre le Diabète au Sénégal"
+            /></a>
+            <h1>Diapora Santé Sénégal</h1>
+          </div>
+          <!-- Navigation principale -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#a-propos">À propos</a></li>
+              <li><a href="#info-diabete">Le diabète</a></li>
+              <li><a href="#ressources">Ressources</a></li>
+              <li><a href="#evenements">Événements</a></li>
+              <li><a href="#implication">Implication</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Contenu principal -->
+      <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+          <div class="container">
+            <h2>Agir Aujourd'hui pour un Sénégal Sans Diabète</h2>
+            <p>
+              Ensemble, luttons contre le diabète pour un Sénégal en meilleure
+              santé.
+            </p>
+            <div class="actualites">
+              <h3>Actualités</h3>
+              <p>Aperçu des dernières nouvelles et événements à venir.</p>
+              <!-- Bouton pour voir toutes les actualités -->
+              <a href="#evenements" class="btn">Voir tous les événements</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section
+          id="a-propos"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <h2>À propos de nous</h2>
+            <p>
+              Découvrez notre histoire, nos valeurs et l'équipe dédiée à la
+              lutte contre le diabète.
+            </p>
+            <!-- Équipe -->
+            <div class="team">
+              <!-- Exemple de membre d'équipe -->
+              <div class="team-member">
+                <img src="./membre1.jpeg" alt="Nom du membre" />
+                <h3>Nom du membre</h3>
+                <p>Rôle au sein de l'association.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Informations sur le diabète -->
+        <section id="info-diabete" data-aos="zoom-in" data-aos-duration="3000">
+          <div class="container">
+            <h2>Informations sur le diabète</h2>
+            <article>
+              <h3>Qu'est-ce que le diabète&nbsp;?</h3>
+              <p>
+                Explication des différents types de diabète et de leurs causes.
+              </p>
+            </article>
+            <article>
+              <h3>Symptômes et diagnostic</h3>
+              <p>
+                Comment reconnaître les symptômes et l'importance du dépistage.
+              </p>
+            </article>
+            <article>
+              <h3>Prévention</h3>
+              <p>Conseils sur la prévention du diabète.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section Ressources -->
+        <section id="ressources" data-aos="flip-up" data-aos-duration="3000">
+          <div class="container">
+            <h2>Ressources</h2>
+            <p>
+              Accédez à des articles, des études et des documents à télécharger.
+            </p>
+            <!-- Liste de ressources -->
+            <ul>
+              <li>
+                <a href="ressource1.pdf" download
+                  >Guide de prévention du diabète</a
+                >
+              </li>
+              <li>
+                <a href="ressource2.pdf" download
+                  >Alimentation saine et diabète</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section Événements -->
+        <section
+          class="slider_container"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <!-- Calendrier des événements -->
+          <button class="direction-btn left">
+            <img src="./left.svg" alt="left_chevron" />
+          </button>
+          <button class="direction-btn right">
+            <img src="./right.svg" alt="rght_chevron" />
+          </button>
+          <div class="slide slide-1 slider_active">
+            <div class="slider_content">
+              <img src="./1.jpeg" alt="anime1" />
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slider_content">
+              <img src="./2.jpeg" alt="anime2" />
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slider_content">
+              <img src="./3.jpeg" alt="anime2" />
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slider_content">
+              <img src="./4.jpeg" alt="anime2" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Implication et bénévolat -->
+        <section
+          id="implication"
+          data-aos="fade-down-left"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <h2>Implication et bénévolat</h2>
+            <p>
+              Rejoignez-nous en tant que bénévole ou soutenez-nous par vos dons.
+            </p>
+            <div class="testimonials">
+              <h3>Témoignages</h3>
+              <!-- Exemple de témoignage -->
+              <blockquote>
+                <p>
+                  "L'association m'a aidé à mieux comprendre le diabète et à
+                  soutenir mes proches."
+                </p>
+                <cite>- Prénom Nom</cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Blog -->
+        <section id="blog" data-aos="fade-down-right" data-aos-duration="3000">
+          <div class="container">
+            <h2>Blog</h2>
+            <p>
+              Retrouvez nos articles sur le diabète, des conseils et des
+              actualités.
+            </p>
+            <!-- Liste d'articles -->
+            <article class="blog-post">
+              <h3><a href="article1.html">Titre de l'article</a></h3>
+              <p>Aperçu de l'article...</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section
+          id="contact"
+          data-aos="fade-down-left"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <h2>Contact</h2>
+            <p>
+              N'hésitez pas à nous contacter pour toute question ou suggestion.
+            </p>
+            <form action="traitement_formulaire.php" method="post">
+              <div class="form-group">
+                <label for="name">Nom&nbsp;:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email&nbsp;:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message&nbsp;:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Envoyer</button>
+            </form>
+            <p>
+              Ou contactez-nous directement à :
+              <a href="mailto:info@associationdiabete.sn"
+                >info@associationdiabete.sn</a
+              >
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Pied de page -->
+      <footer>
+        <div class="container">
+          <p>
+            &copy; 2024 Association Contre le Diabète au Sénégal | Tous droits
+            réservés.
+          </p>
+          <div class="social-media">
+            <p>Suivez-nous sur les réseaux sociaux :</p>
+            <!-- Liens vers les réseaux sociaux -->
+            <a href="#" aria-label="Facebook"
+              ><img src="facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="twitter-icon.png" alt="Twitter"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img src="instagram-icon.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const ul = document.querySelector("nav > ul");
+      const span = document.querySelectorAll(".menu-toggle");
+      const menu_toggle = document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", (event) => {
+          ul.classList.toggle("active");
+          span.forEach((elem) => {
+            elem.classList.toggle("open");
+          });
+        });
+    </script>
+  </body>
+</html>
