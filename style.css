@@ -172,6 +172,10 @@ nav a:focus {
   margin-bottom: 30px;
   animation: fadeInUp 1s ease-out;
 }
+.hero i {
+  color: white;
+  font-weight: bold;
+}
 
 .hero .btn {
   font-size: 1.2rem;
@@ -625,9 +629,16 @@ footer p {
   .footer {
     padding: 30px 15px;
   }
+  .social-media {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 @media (max-width: 480px) {
+  .logo {
+    flex-wrap: wrap;
+  }
   .hero {
     padding: 80px 15px;
   }
@@ -649,6 +660,9 @@ footer p {
     font-size: 2.2rem;
   }
 
+  #contact {
+    padding: 20px 0;
+  }
   .footer p {
     font-size: 1rem;
   }
