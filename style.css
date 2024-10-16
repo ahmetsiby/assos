@@ -26,6 +26,11 @@ a {
   text-decoration: none;
   color: var(--color-gris-fonce);
 }
+i {
+  color: blue;
+  padding: 0 10px;
+  cursor: pointer;
+}
 
 /* Styles de base */
 body {
@@ -37,6 +42,7 @@ body {
 .body_container {
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Container principal */
