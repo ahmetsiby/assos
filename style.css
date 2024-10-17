@@ -9,7 +9,9 @@
   --transition-speed: 0.3s;
   --font-principal: "Lato", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Reset et box-sizing */
 *,
 *::before,
@@ -591,17 +593,19 @@ footer p {
   nav ul {
     flex-direction: column;
     width: 100%;
-    background-color: var(--color-vert);
+    background-color: var(--color-rouge);
     border-radius: 20px;
     position: absolute;
     top: 100%;
     left: -100vw;
-    transition: all var(--transition-speed);
+    transition: all 1s ease-in-out;
   }
 
   nav ul.active {
+    background-color: var(--color-vert);
     display: flex;
     left: 0;
+    border-bottom-right-radius: 50%;
   }
 
   nav li {
