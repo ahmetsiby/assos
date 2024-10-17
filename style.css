@@ -501,6 +501,26 @@ section p {
   outline: 2px solid var(--color-jaune);
   outline-offset: 2px;
 }
+/* Ma carte avec iframe*/
+.map_container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(rgba(3, 235, 100, 0.712), rgba(10, 10, 10, 0.6)),
+    url("./1.webp") no-repeat center center/cover;
+  overflow: hidden;
+}
+.map_container h2 {
+  color: white;
+}
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
 
 /* Footer */
 footer {
@@ -558,10 +578,23 @@ footer p {
 }
 
 /* Media Queries pour la Responsivité */
-@media (max-width: 1024px) {
+@media (max-width: 1087px) {
+  .body_container {
+    width: 90vw;
+  }
+}
+@media (max-width: 965px) {
   .body_container {
     width: 100vw;
   }
+  header .container {
+    padding: 0;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .hero h2 {
     font-size: 3rem;
   }
@@ -581,11 +614,13 @@ footer p {
   }
 }
 
-@media (max-width: 872px) {
+@media (max-width: 830px) {
   .header {
     justify-content: space-between;
   }
-
+  header .container {
+    padding: 0 20px;
+  }
   .menu-toggle {
     display: flex;
   }
@@ -639,7 +674,11 @@ footer p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 539px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
   .logo {
     flex-wrap: wrap;
   }
