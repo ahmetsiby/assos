@@ -27,6 +27,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease-in-out;
 }
 .direction-btn:hover {
   background: #181818;
@@ -87,4 +88,11 @@ h2 {
   color: #d1d1d1;
   cursor: pointer;
   min-width: 200px;
+  transition: all 1s ease-in-out;
+}
+.slider_content button a {
+  color: #d1d1d1;
+}
+.slider_content button:hover {
+  background-color: #292626;
 }

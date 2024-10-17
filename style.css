@@ -240,8 +240,38 @@ section p {
   gap: 40px;
   align-items: start;
 }
+/*lien en fleche*/
+.arrow-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  border-radius: 25px; /* Donne des coins arrondis au bouton */
+  transition: background-color 0.3s ease;
+}
 
+.arrow-link::after {
+  content: "";
+  position: absolute;
+  right: 5px; /* Distance par rapport au bord droit */
+  top: 35%;
+  transform: translateY(50%);
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-45deg);
+}
+
+.arrow-link:hover {
+  background-color: #555555;
+}
 /* Team Section */
+
 .team-member {
   text-align: center;
   transition: transform var(--transition-speed);
@@ -277,8 +307,33 @@ section p {
 #info-diabete h2 {
   color: black;
 }
+#info-diabete .container a {
+  margin-top: 15px;
+}
+.info-post {
+  background: #fafafa9f;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border-radius: 15px;
+  text-align: center;
+  text-align: left;
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+  color: #333333;
+  cursor: pointer;
+  max-width: 600px;
+}
+.info-post h3 {
+  text-align: center;
+}
+.info-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 /* Ressources */
-
+#ressources .container .arrow-link {
+  margin-top: 20px;
+}
 .resource-list {
   list-style: none;
   display: flex;
@@ -308,34 +363,6 @@ section p {
 }
 
 /* Événements */
-.event {
-  background: var(--color-gris-clair);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  transition: background-color var(--transition-speed),
-    transform var(--transition-speed);
-}
-
-.event:hover {
-  background: #e0ffe0;
-  transform: translateY(-5px);
-}
-
-.event h3 {
-  color: var(--color-vert);
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-}
-
-.event p {
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-}
-
-.event .btn {
-  font-size: 1rem;
-}
 
 /* Témoignages */
 .testimonials h3 {
