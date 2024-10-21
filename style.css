@@ -42,7 +42,7 @@ body {
   background-color: var(--color-gris-clair);
 }
 .body_container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -605,14 +605,14 @@ footer p {
 }
 
 /* Media Queries pour la Responsivité */
-@media (max-width: 1087px) {
+@media (max-width: 1200px) {
   .body_container {
-    width: 90vw;
+    width: 80%;
   }
 }
 @media (max-width: 965px) {
   .body_container {
-    width: 100vw;
+    width: 100%;
   }
   header .container {
     padding: 0;
