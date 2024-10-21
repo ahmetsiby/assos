@@ -370,90 +370,6 @@ section p {
 
 /* Événements */
 
-/* Témoignages */
-/*.testimonials h3 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-.testimonials blockquote {
-  background: #f9f9f9;
-  padding: 30px;
-  border-left: 5px solid var(--color-vert);
-  margin: 20px auto;
-  max-width: 800px;
-  font-style: italic;
-  position: relative;
-}
-
-.testimonials blockquote::before {
-  content: "“";
-  font-size: 4rem;
-  color: var(--color-vert);
-  position: absolute;
-  top: -20px;
-  left: -10px;
-}
-
-.testimonials cite {
-  display: block;
-  text-align: right;
-  margin-top: 15px;
-  font-weight: bold;
-  color: var(--color-gris-fonce);
-}
-*/
-/* Blog */
-#blog {
-  background: linear-gradient(rgba(3, 235, 100, 0.712), rgba(10, 10, 10, 0.6)),
-    url("../images/enfant.jpeg") no-repeat center center/cover;
-  color: white;
-}
-#blog h2 {
-  color: black;
-}
-.blog-post {
-  background: #fafafa;
-  padding: 25px;
-  border-radius: 15px;
-  text-align: left;
-  transition: transform var(--transition-speed),
-    box-shadow var(--transition-speed);
-}
-
-.blog-post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h3 {
-  margin-bottom: 15px;
-  font-size: 1.7rem;
-}
-
-.blog-post p {
-  color: var(--color-gris-fonce);
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-}
-
-.blog-post a {
-  color: var(--color-vert);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color var(--transition-speed);
-}
-
-.blog-post a:hover {
-  color: var(--color-jaune);
-}
-
-.blog-post a:focus {
-  outline: 2px solid var(--color-jaune);
-  outline-offset: 2px;
-}
-
 /* Formulaire de Contact */
 #contact form {
   display: flex;
@@ -769,7 +685,6 @@ footer p {
 
 .about ul {
   list-style-type: disc;
-  padding-left: 40px;
 }
 .president-container {
   display: flex;
