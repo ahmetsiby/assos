@@ -17,7 +17,7 @@
     />
 
     <!-- Liens vers les styles CSS -->
-    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./slider.css" />
     <link
@@ -38,7 +38,7 @@
           <div class="logo">
             <a href="#accueil"
               ><img
-                src="logo.png"
+                src="./images/logo.png"
                 alt="Logo de l'Association Contre le Diabète au Sénégal"
             /></a>
             <h1>Diaspora Santé Sénégal</h1>
@@ -103,11 +103,11 @@
             <div class="team">
               <!-- Exemple de membre d'équipe -->
               <div class="team-member">
-                <img src="./membre1.jpeg" alt="Nom du membre" />
+                <img src="./images/membre1.jpeg" alt="Nom du membre" />
                 <h3>Docteur Martin CARVALHO médecin endocrinologue</h3>
                 <p>Président de l’association.</p>
               </div>
-              <a href="/a_propos.html" class="arrow-link"
+              <a href="/apropos.html" class="arrow-link"
                 >Rejoindre cette Section</a
               >
             </div>
@@ -118,22 +118,21 @@
         <section id="info-diabete" data-aos="zoom-in" data-aos-duration="3000">
           <div class="container">
             <h2>Informations sur le diabète</h2>
-            <article class="info-post">
-              <h3>Qu'est-ce que le diabète&nbsp;?</h3>
-              <p>
-                Explication des différents types de diabète et de leurs causes.
-              </p>
-            </article>
-            <article class="info-post">
-              <h3>Symptômes et diagnostic</h3>
-              <p>
-                Comment reconnaître les symptômes et l'importance du dépistage.
-              </p>
-            </article>
-            <article class="info-post">
-              <h3>Prévention</h3>
-              <p>Conseils sur la prévention du diabète.</p>
-            </article>
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/qZyydTikOTk?autoplay=1&mute=1&si=dT1u2nRcK9z4ZOIT"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="video-text">
+                <p>
+                  Diaspora Santé Sénégal : Unissons nos forces contre le
+                  diabète, pour un avenir plus sain dès maintenant !
+                </p>
+              </div>
+            </div>
             <a href="/Info.html" class="arrow-link">Rejoindre cette Section</a>
           </div>
         </section>
@@ -173,14 +172,14 @@
         >
           <!-- Calendrier des événements -->
           <button class="direction-btn left">
-            <img src="./left.svg" alt="left_chevron" />
+            <img src="./images/left.svg" alt="left_chevron" />
           </button>
           <button class="direction-btn right">
-            <img src="./right.svg" alt="rght_chevron" />
+            <img src="./images/right.svg" alt="rght_chevron" />
           </button>
           <div class="slide slide-1 slider_active">
             <div class="slider_content">
-              <img src="./1.jpeg" alt="anime1" />
+              <img src="./images/1.jpeg" alt="anime1" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -188,7 +187,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./2.jpeg" alt="anime2" />
+              <img src="./images/2.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -196,7 +195,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./3.jpeg" alt="anime2" />
+              <img src="./images/3.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -204,7 +203,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./4.jpeg" alt="anime2" />
+              <img src="./images/4.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -212,7 +211,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./5.jpeg" alt="anime2" />
+              <img src="./images/5.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -220,7 +219,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./6.jpeg" alt="anime2" />
+              <img src="./images/6.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -228,7 +227,7 @@
           </div>
           <div class="slide slide-2">
             <div class="slider_content">
-              <img src="./7.jpeg" alt="anime2" />
+              <img src="./images/7.jpeg" alt="anime2" />
               <button class="subcribe">
                 <a href="/evenement.html">Lire le contenue</a>
               </button>
@@ -246,38 +245,24 @@
         >
           <div class="container">
             <h2>Implication et bénévolat</h2>
-            <p>
-              Rejoignez-nous en tant que bénévole ou soutenez-nous par vos dons.
-            </p>
+
             <div class="testimonials">
-              <h3>Témoignages</h3>
-              <!-- Exemple de témoignage -->
-              <blockquote>
-                <p>
-                  "L'association m'a aidé à mieux comprendre le diabète et à
-                  soutenir mes proches."
-                </p>
-                <cite>- Prénom Nom</cite>
-              </blockquote>
+              <div class="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qiDboNXeBO4?si=QZoPUG5dXEOtle34"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- Section Blog -->
-        <section id="blog" data-aos="fade-down-right" data-aos-duration="3000">
-          <div class="container">
-            <h2>Blog</h2>
-            <p>
-              Retrouvez nos articles sur le diabète, des conseils et des
-              actualités.
-            </p>
-            <!-- Liste d'articles -->
-            <article class="blog-post">
-              <h3><a href="article1.html">Titre de l'article</a></h3>
-              <p>Aperçu de l'article...</p>
-            </article>
-          </div>
-        </section>
 
         <!-- Section Contact -->
         <section
@@ -347,8 +332,20 @@
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
+              <a
+                href="https://twitter.com/votre_compte"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com/votre_compte"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -358,16 +355,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      const menuToggle = document.querySelector(".menu-toggle");
       const ul = document.querySelector("nav > ul");
-      const span = document.querySelectorAll(".menu-toggle");
-      const menu_toggle = document
-        .querySelector(".menu-toggle")
-        .addEventListener("click", (event) => {
-          ul.classList.toggle("active");
-          span.forEach((elem) => {
-            elem.classList.toggle("open");
-          });
-        });
+
+      menuToggle.addEventListener("click", () => {
+        ul.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+      });
     </script>
   </body>
 </html>

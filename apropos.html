@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Association Contre le Diabète au Sénégal</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Association dédiée à la sensibilisation, la prévention et la lutte contre le diabète au Sénégal."
+    />
+    <meta
+      name="keywords"
+      content="Diabète, Sénégal, Santé, Association, Prévention, Sensibilisation, Bénévolat"
+    />
+
+    <!-- Liens vers les styles CSS -->
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="body_container">
+      <header data-aos="fade-left" data-aos-duration="3000">
+        <div class="container">
+          <div class="logo">
+            <a href="#accueil"
+              ><img
+                src="./images/logo.png"
+                alt="Logo de l'Association Contre le Diabète au Sénégal"
+            /></a>
+            <h1>Diaspora Santé Sénégal</h1>
+          </div>
+          <!-- Navigation principale -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/">Accueil</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="/">Le diabète</a></li>
+              <li><a href="/">Ressources</a></li>
+              <li><a href="/">Événements</a></li>
+              <li><a href="/">Implication</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="about">
+        <h2>Diaspora Santé Sénégal (DSS)</h2>
+        <p>
+          <strong>Diaspora Santé Sénégal (DSS)</strong> mène une lutte active
+          contre le diabète au Sénégal. L'objectif de DSS est de construire un
+          centre de prise en charge et d'accompagnement des personnes malades du
+          diabète dans chaque région du Sénégal.
+        </p>
+
+        <p>
+          DSS est une association de loi 1901 fondée par le
+          <strong>Dr. Martin Carvalho</strong>. L’association œuvre pour la
+          formation des médecins et la mise en place de centres de prise en
+          charge du diabète dans tout le Sénégal. Aujourd'hui, trois centres
+          existent grâce aux actions humanitaires du Dr. Carvalho, en
+          partenariat avec <strong>Saint Joseph Humanitaire</strong>,
+          <strong>AFFEDIA</strong> et maintenant DSS.
+        </p>
+
+        <h2>Nos Objectifs</h2>
+        <ul>
+          <li>
+            Créer des centres de prise en charge du diabète dans chaque région
+            du Sénégal.
+          </li>
+          <li>
+            Accompagner les personnes atteintes de diabète en leur offrant des
+            soins et un suivi adapté.
+          </li>
+          <li>
+            Participer activement à la formation des médecins spécialisés dans
+            le traitement du diabète.
+          </li>
+        </ul>
+
+        <h2>Nos Réalisations</h2>
+        <p>
+          À ce jour, DSS a permis la formation de
+          <strong>7 médecins</strong> spécialisés et a contribué à la création
+          de trois centres de prise en charge.
+        </p>
+
+        <div class="president-container">
+          <img
+            src="./images/membre1.jpeg"
+            alt="Dr. Martin Carvalho"
+            class="president-img"
+          />
+          <h2>Dr. Martin Carvalho</h2>
+          <p>
+            Le <strong>Dr. Martin Carvalho</strong> est un médecin
+            endocrinologue, président de l'association Diaspora Santé Sénégal.
+            Il est à l’origine des nombreuses initiatives visant à lutter contre
+            le diabète au Sénégal et dans la diaspora, tout en assurant la
+            formation des médecins et le développement de centres de soins
+            spécialisés.
+          </p>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <p>
+            &copy; 2024 Association Contre le Diabète au Sénégal | Tous droits
+            réservés.
+          </p>
+          <div class="social-media">
+            <p>Suivez-nous sur les réseaux sociaux :</p>
+            <div class="sociaux">
+              <!-- Liens vers les réseaux sociaux -->
+              <a
+                href="https://www.facebook.com/p/Diaspora-Sant%C3%A9-S%C3%A9n%C3%A9gal-100064382663673/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const ul = document.querySelector("nav > ul");
+      const span = document.querySelectorAll(".menu-toggle");
+      const menu_toggle = document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", (event) => {
+          ul.classList.toggle("active");
+          span.forEach((elem) => {
+            elem.classList.toggle("open");
+          });
+        });
+    </script>
+  </body>
+</html>
