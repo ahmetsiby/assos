@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        scrollbar-width: thin;
+        scrollbar-color: blue #f0f0f0;
+      }
+      /* Style de la scrollbar pour WebKit */
+      .container::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      .container::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 5px;
+      }
+      .container::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 5px;
+      }
+      .iframe_container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iframe_container">
+        <h2>DSS</h2>
+        <iframe
+          width="400"
+          height="250"
+          src="https://www.youtube.com/embed/qZyydTikOTk?si=dT1u2nRcK9z4ZOIT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="iframe_container">
+        <h2>Qu'est-ce que le diabète ?</h2>
+        <iframe
+          width="400"
+          height="250"
+          src="./WhatsApp Video 2024-11-10 at 21.48.53.mp4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="iframe_container">
+        <h2>Symttômes et diagnostic</h2>
+        <iframe
+          width="400"
+          height="250"
+          src="./WhatsApp Video 2024-11-10 at 21.50.48.mp4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="iframe_container">
+        <h2>Prévention</h2>
+        <iframe
+          width="400"
+          height="250"
+          src="https://www.youtube.com/embed/qZyydTikOTk?si=dT1u2nRcK9z4ZOIT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
