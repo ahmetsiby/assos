@@ -148,7 +148,9 @@
                 </p>
               </div>
             </div>
-            <a href="/Info.html" class="arrow-link">Rejoindre cette Section</a>
+            <a href="/Info.html" class="arrow-link showToastBtn"
+              >Rejoindre cette Section</a
+            >
           </div>
         </section>
 
@@ -172,7 +174,7 @@
                 >
               </li>
             </ul>
-            <a href="/ressource.html" class="arrow-link"
+            <a href="/ressource.html" class="arrow-link showToastBtn"
               >Rejoindre cette Section</a
             >
           </div>
@@ -196,7 +198,9 @@
             <div class="slider_content">
               <img src="./images/1.jpeg" alt="anime1" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -204,7 +208,9 @@
             <div class="slider_content">
               <img src="./images/2.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -212,7 +218,9 @@
             <div class="slider_content">
               <img src="./images/3.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -220,7 +228,9 @@
             <div class="slider_content">
               <img src="./images/4.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -228,7 +238,9 @@
             <div class="slider_content">
               <img src="./images/5.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -236,7 +248,9 @@
             <div class="slider_content">
               <img src="./images/6.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -244,7 +258,9 @@
             <div class="slider_content">
               <img src="./images/7.jpeg" alt="anime2" />
               <button class="subcribe">
-                <a href="/evenement.html">Lire le contenue</a>
+                <a href="/evenement.html" class="showToastBtn"
+                  >Lire le contenue</a
+                >
               </button>
             </div>
           </div>
@@ -364,6 +380,16 @@
             </div>
           </div>
         </div>
+        <div id="toast" class="toast">
+          <div class="toast-content">
+            <span class="toast-icon">⚠️</span>
+            <p class="toast-message">
+              Cette partie de la page est en construction, veuillez nous excuser
+              pour la gêne occasionnée.
+            </p>
+            <button class="toast-close" onclick="closeToast()">✖</button>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="./slider.js"></script>
@@ -377,6 +403,23 @@
         ul.classList.toggle("active");
         menuToggle.classList.toggle("open");
       });
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".showToastBtn").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            document.getElementById("toast").classList.add("show");
+            //apres retire le toast
+            setTimeout(() => {
+              document.getElementById("toast").classList.remove("show");
+            }, 3000);
+          });
+        });
+        // Fonction pour fermer le toast quand on clique sur le bouton "✖"
+      });
+      function closeToast() {
+        document.getElementById("toast").classList.remove("show");
+      }
     </script>
     <script type="application/ld+json">
       {
