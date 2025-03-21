@@ -760,6 +760,12 @@ footer p {
     height: 48.5%;
     width: 55vw;
   }
+
+  .qr-code {
+    display: block;
+    width: 70vw;
+    height: 70vw;
+  }
 }
 
 /* About style***/
